@@ -25,7 +25,7 @@
 
 // LoRasPi board 
 // see https://github.com/hallard/LoRasPI
-#define BOARD_LORASPI
+//#define BOARD_LORASPI
 
 // iC880A and LinkLab Lora Gateway Shield (if RF module plugged into)
 // see https://github.com/ch2i/iC880A-Raspberry-PI
@@ -37,14 +37,14 @@
 
 // Dragino Raspberry PI hat
 // see https://github.com/dragino/Lora
-//#define BOARD_DRAGINO_PIHAT
+#define BOARD_DRAGINO_PIHAT
 
 // Now we include RasPi_Boards.h so this will expose defined 
 // constants with CS/IRQ/RESET/on board LED pins definition
 #include "../RasPiBoards.h"
 
 // Our RFM95 Configuration 
-#define RF_FREQUENCY  868.00
+#define RF_FREQUENCY  433.00
 #define RF_GATEWAY_ID 1 
 #define RF_NODE_ID    10
 
